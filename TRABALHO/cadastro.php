@@ -58,8 +58,8 @@ $senha = $_POST['senha'];
        */
        pg_close($link);
 	   
-	   
-  header("boot.html"); }
+	   header('location:boot.html');
+  }
 	
 }
    
