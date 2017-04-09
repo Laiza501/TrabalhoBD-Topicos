@@ -1,0 +1,33 @@
+pgsql:host=localhost;port=5432;dbname=testdb;user=bruce;password=mypass
+
+insert into evento values (1,'Método CIS','17/02/2017','19/02/2017','Av. Washington Soares, 999 - Edson Queiroz, Fortaleza - CE',60811341,'Centro de Eventos do Ceará'  );
+insert into evento values (2,'XIX Encontro Luso Brasileiro do Turismo Sênior','26/04/2017','30/04/2017','Av. Washington Soares, 999 - Edson Queiroz, Fortaleza - CE',60811341,'Centro de Eventos do Ceará'  );
+insert into evento values (3,'Tecnoalimentos','10/05/2017','12/05/2017','Av. Washington Soares, 999 - Edson Queiroz, Fortaleza - CE',60811341,'Centro de Eventos do Ceará'  );
+insert into evento values (4,'3º Congresso Luso Brasileiro de Oncologia Clinica','14/05/2017','16/05/2017','Av. Washington Soares, 999 - Edson Queiroz, Fortaleza - CE',60811341,'Centro de Eventos do Ceará'  );
+insert into evento values (5,'Feira de Noivas','14/05/2017','16/05/2017','Av. Washington Soares, 999 - Edson Queiroz, Fortaleza - CE',60811341,'Centro de Eventos do Ceará' );
+insert into evento values (6,'44º CONGRESSO LATINO AMERICAN /44º CONGRESSO LATINO AMERICANO','10/05/2017','12/05/2017','Av. Presidente Castelo Branco, 400 - Praia de Iracema, Fortaleza - CE',60814574,'Marina Park Hote');
+
+
+select * from evento
+
+
+drop table evento
+
+create table evento (
+	id serial primary key,
+	nome varchar(80),
+	datainicio date,
+	datafinal date,
+	endereco varchar(80),
+	cep integer,
+	localizacao varchar(80)
+)
+
+create table usuario(
+	id serial primary key,
+	nome varchar(35),
+	email varchar(35),
+	senha varchar(35)
+)
+
+select * from usuario
