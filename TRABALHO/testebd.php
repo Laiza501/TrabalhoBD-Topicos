@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"> 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jquery-3.2.0.min.js"></script>  
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>     
 </head>
 
 <body>
@@ -47,7 +47,7 @@ if (!$link) {
 		$idEventoCMarcado = $_GET['id'];
 		
 		
-		//ó primeiro vamos pesquisar no banco se já tem um evento cadastrado pra esse usuario
+		//Pesquisa no banco se já tem um evento cadastrado pra esse usuario
 		
 		$sql="SELECT * FROM eventocomparecimento WHERE idusuariomarcado = '$idUsuarioMarcado' AND ideventocmarcado= '$idEventoCMarcado'";
 		
